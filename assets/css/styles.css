@@ -81,11 +81,11 @@
 .projects__container {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .main__title {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .main__aside {
@@ -96,7 +96,7 @@
   grid-template-areas:
     'annoucement'
     'trending';
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .main_projects {
