@@ -103,7 +103,9 @@
 .session__avatar {
   width: 36px;
   height: 36px;
+}
 
+.session__title {
   margin: 0 2rem;
 }
 
