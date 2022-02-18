@@ -9,7 +9,7 @@
 
 .grid__container {
   display: grid;
-  grid-template: 1fr 4fr 40px / 1fr 4fr;
+  grid-template: 1fr 1fr / 1fr 4fr;
   grid-template-areas:
     'sidebar header'
     'sidebar main';
@@ -58,9 +58,82 @@
 .header {
   grid-area: header;
   background: var(--white-primary);
+  padding: 1rem 2rem;
 
   filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04))
     drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+
+  display: grid;
+  grid-template: 1fr 1fr / 2fr 1fr;
+  grid-template-areas:
+    'search session'
+    'profile panel';
+  gap: 1rem;
+}
+
+.header__search {
+  grid-area: search;
+
+  display: flex;
+  align-items: center;
+}
+
+.header__profile {
+  grid-area: profile;
+
+  display: flex;
+  align-items: center;
+}
+
+.profile__avatar {
+  width: 64px;
+  height: 64px;
+
+  margin-right: 1rem;
+}
+
+.header__session {
+  grid-area: session;
+
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.session__avatar {
+  width: 36px;
+  height: 36px;
+
+  margin: 0 2rem;
+}
+
+.search__icon {
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.search__input {
+  width: 100%;
+  padding: 0.2rem 0.7rem;
+
+  border: none;
+  border-radius: 10px;
+
+  background-color: var(--grey-primary);
+  color: #333;
+  font-weight: bold;
+}
+
+.search__input:focus {
+  outline: none;
+}
+
+.header__panel {
+  grid-area: panel;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 /* Header */
@@ -165,3 +238,20 @@
   margin-top: 1rem;
 }
 /* Card */
+
+/* Button */
+.button {
+  border: none;
+  background-color: var(--blue-primary);
+  color: #fff;
+
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+
+  font-weight: bold;
+}
+
+.button:hover {
+  filter: brightness(1.1);
+}
+/* Button */
