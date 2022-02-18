@@ -1,3 +1,46 @@
 :root {
   --background: #f0f2f5;
+  --blue-primary: #0ea5e9;
 }
+
+/* Utils */
+
+/* Utils */
+
+/* Sidebar */
+.sidebar {
+  background: var(--blue-primary);
+  color: #fff;
+  padding: 1rem;
+
+  /* Temp */
+  height: 100vh;
+  width: 25%;
+}
+
+.sidebar > * + * {
+  margin-top: 2.5rem;
+}
+
+.sidebar__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header__title {
+  cursor: default;
+}
+
+.sidebar__wrapper + .sidebar__wrapper {
+  margin-top: 0.5rem;
+}
+
+.sidebar__title {
+  margin-left: 1rem;
+}
+
+.sidebar__title:hover {
+  filter: brightness(0.9);
+}
+
+/* Sidebar */
