@@ -41,7 +41,7 @@
 }
 
 .sidebar__wrapper + .sidebar__wrapper {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 .sidebar__title {
@@ -211,6 +211,7 @@
 
 .card__svg {
   margin-right: 1rem;
+  cursor: pointer;
 }
 
 .card__divider {
